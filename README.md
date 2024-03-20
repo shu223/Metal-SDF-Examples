@@ -10,14 +10,7 @@
 
 Shape Animation Examples using SDF. Shaders are written in MSL (Metal Shader Language) with SwiftUI.
 
-<img src="images/smin.gif" width="200">
-
-<img src="images/smin_2d.gif" width="200">
-
-<img src="images/morphing.gif" width="200">
-
-<img src="images/morphing_2d.gif" width="200">
-
+![](images/MetalSDF_.gif)
 
 ## What's this?
 
