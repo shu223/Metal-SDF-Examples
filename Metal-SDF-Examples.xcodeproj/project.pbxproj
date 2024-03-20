@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A1D09512BA83F240019D54E /* MSLMathGraphicsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D09502BA83F240019D54E /* MSLMathGraphicsApp.swift */; };
+		8A1D09532BA83F240019D54E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D09522BA83F240019D54E /* ContentView.swift */; };
+		8A1D09552BA83F250019D54E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1D09542BA83F250019D54E /* Assets.xcassets */; };
+		8A1D09582BA83F250019D54E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1D09572BA83F250019D54E /* Preview Assets.xcassets */; };
+		8A1D097E2BA8CED90019D54E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D097D2BA8CED90019D54E /* DetailView.swift */; };
+		8A1D09802BA8D0320019D54E /* ShaderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D097F2BA8D0320019D54E /* ShaderRow.swift */; };
+		8A1D09822BA8D1A60019D54E /* ShaderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D09812BA8D1A60019D54E /* ShaderInfo.swift */; };
+		8A1D09842BA8D2C10019D54E /* Shaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D09832BA8D2C10019D54E /* Shaders.swift */; };
+		8A4BBAA62BA8EAD9002C6FB1 /* mathShader_8_2.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAA52BA8EAD9002C6FB1 /* mathShader_8_2.metal */; };
+		8A4BBAA82BA8EF0E002C6FB1 /* mathShader_8_1.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAA72BA8EF0E002C6FB1 /* mathShader_8_1.metal */; };
+		8A4BBAAB2BA8EF6B002C6FB1 /* RotateFunctions.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAAA2BA8EF6B002C6FB1 /* RotateFunctions.metal */; };
+		8A4BBAAD2BA8EF9E002C6FB1 /* Textures.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAAC2BA8EF9E002C6FB1 /* Textures.metal */; };
+		8A4BBAB02BA8F0D5002C6FB1 /* mathShader_8_6.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAAF2BA8F0D5002C6FB1 /* mathShader_8_6.metal */; };
+		8A4BBAB62BA8F35C002C6FB1 /* SDF.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAB52BA8F35C002C6FB1 /* SDF.metal */; };
+		8A4BBAB82BA92F7D002C6FB1 /* CommonFunctions.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAB72BA92F7D002C6FB1 /* CommonFunctions.metal */; };
+		8A4BBABB2BA933BE002C6FB1 /* mathShader_8_7.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBABA2BA933BE002C6FB1 /* mathShader_8_7.metal */; };
+		8A4BBABD2BA9376B002C6FB1 /* mathShader_9_3.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBABC2BA9376B002C6FB1 /* mathShader_9_3.metal */; };
+		8A4BBABF2BA93913002C6FB1 /* mophing2D.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBABE2BA93913002C6FB1 /* mophing2D.metal */; };
+		8A4BBAC52BA970FF002C6FB1 /* mathShader_9_2.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAC42BA970FF002C6FB1 /* mathShader_9_2.metal */; };
+		8A4BBAC72BA973BA002C6FB1 /* smoothMin2D.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAC62BA973BA002C6FB1 /* smoothMin2D.metal */; };
+		8A4BBAC92BA97689002C6FB1 /* circleShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAC82BA97689002C6FB1 /* circleShader.metal */; };
+		8A4BBACF2BAA3393002C6FB1 /* minCircles.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBACE2BAA3393002C6FB1 /* minCircles.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A1D094D2BA83F240019D54E /* Metal-SDF-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metal-SDF-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1D09502BA83F240019D54E /* MSLMathGraphicsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSLMathGraphicsApp.swift; sourceTree = "<group>"; };
+		8A1D09522BA83F240019D54E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8A1D09542BA83F250019D54E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A1D09572BA83F250019D54E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A1D097D2BA8CED90019D54E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		8A1D097F2BA8D0320019D54E /* ShaderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderRow.swift; sourceTree = "<group>"; };
+		8A1D09812BA8D1A60019D54E /* ShaderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderInfo.swift; sourceTree = "<group>"; };
+		8A1D09832BA8D2C10019D54E /* Shaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shaders.swift; sourceTree = "<group>"; };
+		8A4BBAA52BA8EAD9002C6FB1 /* mathShader_8_2.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_8_2.metal; sourceTree = "<group>"; };
+		8A4BBAA72BA8EF0E002C6FB1 /* mathShader_8_1.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_8_1.metal; sourceTree = "<group>"; };
+		8A4BBAA92BA8EF6B002C6FB1 /* RotateFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateFunctions.h; sourceTree = "<group>"; };
+		8A4BBAAA2BA8EF6B002C6FB1 /* RotateFunctions.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = RotateFunctions.metal; sourceTree = "<group>"; };
+		8A4BBAAC2BA8EF9E002C6FB1 /* Textures.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Textures.metal; sourceTree = "<group>"; };
+		8A4BBAAE2BA8F00A002C6FB1 /* Textures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Textures.h; sourceTree = "<group>"; };
+		8A4BBAAF2BA8F0D5002C6FB1 /* mathShader_8_6.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = mathShader_8_6.metal; sourceTree = "<group>"; };
+		8A4BBAB42BA8F35C002C6FB1 /* SDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDF.h; sourceTree = "<group>"; };
+		8A4BBAB52BA8F35C002C6FB1 /* SDF.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = SDF.metal; sourceTree = "<group>"; };
+		8A4BBAB72BA92F7D002C6FB1 /* CommonFunctions.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CommonFunctions.metal; sourceTree = "<group>"; };
+		8A4BBAB92BA930CB002C6FB1 /* CommonFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonFunctions.h; sourceTree = "<group>"; };
+		8A4BBABA2BA933BE002C6FB1 /* mathShader_8_7.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_8_7.metal; sourceTree = "<group>"; };
+		8A4BBABC2BA9376B002C6FB1 /* mathShader_9_3.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_9_3.metal; sourceTree = "<group>"; };
+		8A4BBABE2BA93913002C6FB1 /* mophing2D.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mophing2D.metal; sourceTree = "<group>"; };
+		8A4BBAC42BA970FF002C6FB1 /* mathShader_9_2.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_9_2.metal; sourceTree = "<group>"; };
+		8A4BBAC62BA973BA002C6FB1 /* smoothMin2D.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = smoothMin2D.metal; sourceTree = "<group>"; };
+		8A4BBAC82BA97689002C6FB1 /* circleShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = circleShader.metal; sourceTree = "<group>"; };
+		8A4BBACE2BAA3393002C6FB1 /* minCircles.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = minCircles.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A1D094A2BA83F240019D54E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A1D09442BA83F240019D54E = {
+			isa = PBXGroup;
+			children = (
+				8A4BBAA12BA8EAC7002C6FB1 /* shaders */,
+				8A1D094F2BA83F240019D54E /* Metal-SDF-Examples */,
+				8A1D094E2BA83F240019D54E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A1D094E2BA83F240019D54E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A1D094D2BA83F240019D54E /* Metal-SDF-Examples.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A1D094F2BA83F240019D54E /* Metal-SDF-Examples */ = {
+			isa = PBXGroup;
+			children = (
+				8A1D09542BA83F250019D54E /* Assets.xcassets */,
+				8A1D09502BA83F240019D54E /* MSLMathGraphicsApp.swift */,
+				8A1D09522BA83F240019D54E /* ContentView.swift */,
+				8A1D097F2BA8D0320019D54E /* ShaderRow.swift */,
+				8A1D097D2BA8CED90019D54E /* DetailView.swift */,
+				8A1D09812BA8D1A60019D54E /* ShaderInfo.swift */,
+				8A1D09832BA8D2C10019D54E /* Shaders.swift */,
+				8A1D09562BA83F250019D54E /* Preview Content */,
+			);
+			path = "Metal-SDF-Examples";
+			sourceTree = "<group>";
+		};
+		8A1D09562BA83F250019D54E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8A1D09572BA83F250019D54E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A4BBAA12BA8EAC7002C6FB1 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				8A4BBAB92BA930CB002C6FB1 /* CommonFunctions.h */,
+				8A4BBAB72BA92F7D002C6FB1 /* CommonFunctions.metal */,
+				8A4BBAA92BA8EF6B002C6FB1 /* RotateFunctions.h */,
+				8A4BBAAA2BA8EF6B002C6FB1 /* RotateFunctions.metal */,
+				8A4BBAAE2BA8F00A002C6FB1 /* Textures.h */,
+				8A4BBAAC2BA8EF9E002C6FB1 /* Textures.metal */,
+				8A4BBAB42BA8F35C002C6FB1 /* SDF.h */,
+				8A4BBAB52BA8F35C002C6FB1 /* SDF.metal */,
+				8A4BBAA72BA8EF0E002C6FB1 /* mathShader_8_1.metal */,
+				8A4BBAA52BA8EAD9002C6FB1 /* mathShader_8_2.metal */,
+				8A4BBAAF2BA8F0D5002C6FB1 /* mathShader_8_6.metal */,
+				8A4BBABA2BA933BE002C6FB1 /* mathShader_8_7.metal */,
+				8A4BBAC42BA970FF002C6FB1 /* mathShader_9_2.metal */,
+				8A4BBABC2BA9376B002C6FB1 /* mathShader_9_3.metal */,
+				8A4BBABE2BA93913002C6FB1 /* mophing2D.metal */,
+				8A4BBAC62BA973BA002C6FB1 /* smoothMin2D.metal */,
+				8A4BBAC82BA97689002C6FB1 /* circleShader.metal */,
+				8A4BBACE2BAA3393002C6FB1 /* minCircles.metal */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A1D094C2BA83F240019D54E /* Metal-SDF-Examples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A1D095B2BA83F250019D54E /* Build configuration list for PBXNativeTarget "Metal-SDF-Examples" */;
+			buildPhases = (
+				8A1D09492BA83F240019D54E /* Sources */,
+				8A1D094A2BA83F240019D54E /* Frameworks */,
+				8A1D094B2BA83F240019D54E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Metal-SDF-Examples";
+			productName = MSLMathGraphics;
+			productReference = 8A1D094D2BA83F240019D54E /* Metal-SDF-Examples.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A1D09452BA83F240019D54E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					8A1D094C2BA83F240019D54E = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 8A1D09482BA83F240019D54E /* Build configuration list for PBXProject "Metal-SDF-Examples" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A1D09442BA83F240019D54E;
+			productRefGroup = 8A1D094E2BA83F240019D54E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A1D094C2BA83F240019D54E /* Metal-SDF-Examples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A1D094B2BA83F240019D54E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A1D09582BA83F250019D54E /* Preview Assets.xcassets in Resources */,
+				8A1D09552BA83F250019D54E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A1D09492BA83F240019D54E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A1D09822BA8D1A60019D54E /* ShaderInfo.swift in Sources */,
+				8A4BBAB62BA8F35C002C6FB1 /* SDF.metal in Sources */,
+				8A4BBABF2BA93913002C6FB1 /* mophing2D.metal in Sources */,
+				8A4BBAA82BA8EF0E002C6FB1 /* mathShader_8_1.metal in Sources */,
+				8A4BBAC92BA97689002C6FB1 /* circleShader.metal in Sources */,
+				8A1D09532BA83F240019D54E /* ContentView.swift in Sources */,
+				8A1D097E2BA8CED90019D54E /* DetailView.swift in Sources */,
+				8A4BBAAD2BA8EF9E002C6FB1 /* Textures.metal in Sources */,
+				8A4BBAA62BA8EAD9002C6FB1 /* mathShader_8_2.metal in Sources */,
+				8A4BBAC52BA970FF002C6FB1 /* mathShader_9_2.metal in Sources */,
+				8A1D09802BA8D0320019D54E /* ShaderRow.swift in Sources */,
+				8A4BBAB82BA92F7D002C6FB1 /* CommonFunctions.metal in Sources */,
+				8A4BBACF2BAA3393002C6FB1 /* minCircles.metal in Sources */,
+				8A4BBAB02BA8F0D5002C6FB1 /* mathShader_8_6.metal in Sources */,
+				8A1D09512BA83F240019D54E /* MSLMathGraphicsApp.swift in Sources */,
+				8A4BBAC72BA973BA002C6FB1 /* smoothMin2D.metal in Sources */,
+				8A4BBABB2BA933BE002C6FB1 /* mathShader_8_7.metal in Sources */,
+				8A1D09842BA8D2C10019D54E /* Shaders.swift in Sources */,
+				8A4BBAAB2BA8EF6B002C6FB1 /* RotateFunctions.metal in Sources */,
+				8A4BBABD2BA9376B002C6FB1 /* mathShader_9_3.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A1D09592BA83F250019D54E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A1D095A2BA83F250019D54E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A1D095C2BA83F250019D54E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Metal-SDF-Examples/Preview Content\"";
+				DEVELOPMENT_TEAM = 9Z86A4AWDE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shu223.MetalSDFExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A1D095D2BA83F250019D54E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Metal-SDF-Examples/Preview Content\"";
+				DEVELOPMENT_TEAM = 9Z86A4AWDE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shu223.MetalSDFExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A1D09482BA83F240019D54E /* Build configuration list for PBXProject "Metal-SDF-Examples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A1D09592BA83F250019D54E /* Debug */,
+				8A1D095A2BA83F250019D54E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A1D095B2BA83F250019D54E /* Build configuration list for PBXNativeTarget "Metal-SDF-Examples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A1D095C2BA83F250019D54E /* Debug */,
+				8A1D095D2BA83F250019D54E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A1D09452BA83F240019D54E /* Project object */;
+}
