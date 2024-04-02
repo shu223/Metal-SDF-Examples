@@ -9,5 +9,6 @@
 #define TextureShader_h
 
 float text(float2 st);
+float pnoise31(float3 p);
 
 #endif /* TextureShader_h */

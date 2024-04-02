@@ -23,12 +23,13 @@
 		8A4BBAB62BA8F35C002C6FB1 /* SDF.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAB52BA8F35C002C6FB1 /* SDF.metal */; };
 		8A4BBAB82BA92F7D002C6FB1 /* CommonFunctions.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAB72BA92F7D002C6FB1 /* CommonFunctions.metal */; };
 		8A4BBABB2BA933BE002C6FB1 /* mathShader_8_7.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBABA2BA933BE002C6FB1 /* mathShader_8_7.metal */; };
-		8A4BBABD2BA9376B002C6FB1 /* mathShader_9_3.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBABC2BA9376B002C6FB1 /* mathShader_9_3.metal */; };
+		8A4BBABD2BA9376B002C6FB1 /* mathShader_9_4.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBABC2BA9376B002C6FB1 /* mathShader_9_4.metal */; };
 		8A4BBABF2BA93913002C6FB1 /* mophing2D.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBABE2BA93913002C6FB1 /* mophing2D.metal */; };
 		8A4BBAC52BA970FF002C6FB1 /* mathShader_9_2.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAC42BA970FF002C6FB1 /* mathShader_9_2.metal */; };
 		8A4BBAC72BA973BA002C6FB1 /* smoothMin2D.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAC62BA973BA002C6FB1 /* smoothMin2D.metal */; };
 		8A4BBAC92BA97689002C6FB1 /* circleShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAC82BA97689002C6FB1 /* circleShader.metal */; };
 		8A4BBACF2BAA3393002C6FB1 /* minCircles.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBACE2BAA3393002C6FB1 /* minCircles.metal */; };
+		8ABF4F872BBBB3E6000C2DA0 /* mathShader_9_3.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8ABF4F862BBBB3E6000C2DA0 /* mathShader_9_3.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,12 +54,13 @@
 		8A4BBAB72BA92F7D002C6FB1 /* CommonFunctions.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CommonFunctions.metal; sourceTree = "<group>"; };
 		8A4BBAB92BA930CB002C6FB1 /* CommonFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonFunctions.h; sourceTree = "<group>"; };
 		8A4BBABA2BA933BE002C6FB1 /* mathShader_8_7.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_8_7.metal; sourceTree = "<group>"; };
-		8A4BBABC2BA9376B002C6FB1 /* mathShader_9_3.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_9_3.metal; sourceTree = "<group>"; };
+		8A4BBABC2BA9376B002C6FB1 /* mathShader_9_4.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_9_4.metal; sourceTree = "<group>"; };
 		8A4BBABE2BA93913002C6FB1 /* mophing2D.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mophing2D.metal; sourceTree = "<group>"; };
 		8A4BBAC42BA970FF002C6FB1 /* mathShader_9_2.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_9_2.metal; sourceTree = "<group>"; };
 		8A4BBAC62BA973BA002C6FB1 /* smoothMin2D.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = smoothMin2D.metal; sourceTree = "<group>"; };
 		8A4BBAC82BA97689002C6FB1 /* circleShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = circleShader.metal; sourceTree = "<group>"; };
 		8A4BBACE2BAA3393002C6FB1 /* minCircles.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = minCircles.metal; sourceTree = "<group>"; };
+		8ABF4F862BBBB3E6000C2DA0 /* mathShader_9_3.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_9_3.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +130,8 @@
 				8A4BBAAF2BA8F0D5002C6FB1 /* mathShader_8_6.metal */,
 				8A4BBABA2BA933BE002C6FB1 /* mathShader_8_7.metal */,
 				8A4BBAC42BA970FF002C6FB1 /* mathShader_9_2.metal */,
-				8A4BBABC2BA9376B002C6FB1 /* mathShader_9_3.metal */,
+				8ABF4F862BBBB3E6000C2DA0 /* mathShader_9_3.metal */,
+				8A4BBABC2BA9376B002C6FB1 /* mathShader_9_4.metal */,
 				8A4BBABE2BA93913002C6FB1 /* mophing2D.metal */,
 				8A4BBAC62BA973BA002C6FB1 /* smoothMin2D.metal */,
 				8A4BBAC82BA97689002C6FB1 /* circleShader.metal */,
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A1D09822BA8D1A60019D54E /* ShaderInfo.swift in Sources */,
+				8ABF4F872BBBB3E6000C2DA0 /* mathShader_9_3.metal in Sources */,
 				8A4BBAB62BA8F35C002C6FB1 /* SDF.metal in Sources */,
 				8A4BBABF2BA93913002C6FB1 /* mophing2D.metal in Sources */,
 				8A4BBAA82BA8EF0E002C6FB1 /* mathShader_8_1.metal in Sources */,
@@ -226,7 +230,7 @@
 				8A4BBABB2BA933BE002C6FB1 /* mathShader_8_7.metal in Sources */,
 				8A1D09842BA8D2C10019D54E /* Shaders.swift in Sources */,
 				8A4BBAAB2BA8EF6B002C6FB1 /* RotateFunctions.metal in Sources */,
-				8A4BBABD2BA9376B002C6FB1 /* mathShader_9_3.metal in Sources */,
+				8A4BBABD2BA9376B002C6FB1 /* mathShader_9_4.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
