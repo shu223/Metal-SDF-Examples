@@ -15,6 +15,7 @@
 		8A1D09802BA8D0320019D54E /* ShaderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D097F2BA8D0320019D54E /* ShaderRow.swift */; };
 		8A1D09822BA8D1A60019D54E /* ShaderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D09812BA8D1A60019D54E /* ShaderInfo.swift */; };
 		8A1D09842BA8D2C10019D54E /* Shaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D09832BA8D2C10019D54E /* Shaders.swift */; };
+		8A2538132BC4A0F7005718C7 /* CommonScene.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A2538122BC4A0F7005718C7 /* CommonScene.metal */; };
 		8A4BBAA62BA8EAD9002C6FB1 /* mathShader_8_2.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAA52BA8EAD9002C6FB1 /* mathShader_8_2.metal */; };
 		8A4BBAA82BA8EF0E002C6FB1 /* mathShader_8_1.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAA72BA8EF0E002C6FB1 /* mathShader_8_1.metal */; };
 		8A4BBAAB2BA8EF6B002C6FB1 /* RotateFunctions.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAAA2BA8EF6B002C6FB1 /* RotateFunctions.metal */; };
@@ -42,6 +43,8 @@
 		8A1D097F2BA8D0320019D54E /* ShaderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderRow.swift; sourceTree = "<group>"; };
 		8A1D09812BA8D1A60019D54E /* ShaderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderInfo.swift; sourceTree = "<group>"; };
 		8A1D09832BA8D2C10019D54E /* Shaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shaders.swift; sourceTree = "<group>"; };
+		8A2538122BC4A0F7005718C7 /* CommonScene.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CommonScene.metal; sourceTree = "<group>"; };
+		8A2538142BC4A13D005718C7 /* CommonScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonScene.h; sourceTree = "<group>"; };
 		8A4BBAA52BA8EAD9002C6FB1 /* mathShader_8_2.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_8_2.metal; sourceTree = "<group>"; };
 		8A4BBAA72BA8EF0E002C6FB1 /* mathShader_8_1.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_8_1.metal; sourceTree = "<group>"; };
 		8A4BBAA92BA8EF6B002C6FB1 /* RotateFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateFunctions.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				8A4BBAAC2BA8EF9E002C6FB1 /* Textures.metal */,
 				8A4BBAB42BA8F35C002C6FB1 /* SDF.h */,
 				8A4BBAB52BA8F35C002C6FB1 /* SDF.metal */,
+				8A2538142BC4A13D005718C7 /* CommonScene.h */,
+				8A2538122BC4A0F7005718C7 /* CommonScene.metal */,
 				8A4BBAA72BA8EF0E002C6FB1 /* mathShader_8_1.metal */,
 				8A4BBAA52BA8EAD9002C6FB1 /* mathShader_8_2.metal */,
 				8A4BBAAF2BA8F0D5002C6FB1 /* mathShader_8_6.metal */,
@@ -212,6 +217,7 @@
 			files = (
 				8A1D09822BA8D1A60019D54E /* ShaderInfo.swift in Sources */,
 				8ABF4F872BBBB3E6000C2DA0 /* mathShader_9_3.metal in Sources */,
+				8A2538132BC4A0F7005718C7 /* CommonScene.metal in Sources */,
 				8A4BBAB62BA8F35C002C6FB1 /* SDF.metal in Sources */,
 				8A4BBABF2BA93913002C6FB1 /* mophing2D.metal in Sources */,
 				8A4BBAA82BA8EF0E002C6FB1 /* mathShader_8_1.metal in Sources */,

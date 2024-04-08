@@ -8,23 +8,8 @@
 #include <metal_stdlib>
 using namespace metal;
 
-#include "SDF.h"
+#include "CommonScene.h"
 
-float sceneSDF_8_6(float3 p) {
-    return sphereSDF(p, float3(0), 1.0);
-}
-
-// 法線の計算
-// 拡散光の計算に必要
-float3 gradSDF_8_6(float3 p) {
-    float eps = 0.001;
-    // 勾配を正規化
-    return normalize(float3(
-                            sceneSDF_8_6(p + float3(eps, 0.0, 0.0)) - sceneSDF_8_6(p - float3(eps, 0.0, 0.0)),
-                            sceneSDF_8_6(p + float3(0.0, eps, 0.0)) - sceneSDF_8_6(p - float3(0.0, eps, 0.0)),
-                            sceneSDF_8_6(p + float3(0.0, 0.0, eps)) - sceneSDF_8_6(p - float3(0.0, 0.0, eps))
-                            ));
-}
 
 [[ stitchable ]] half4 mathGraphicsShader_8_6(float2 position,
                                               half4 color,
@@ -57,15 +42,15 @@ float3 gradSDF_8_6(float3 p) {
     half3 rgb = half3(0.0);
     // レイを進めるループ
     for(int i = 0; i < 50; i ++ ) {
-        if (sceneSDF_8_6(rPos) > 0.001) { // 球にぶつかる前
+        if (sphereSceneSDF(rPos) > 0.001) { // 球にぶつかる前
             // レイをさらに進める
-            rPos += sceneSDF_8_6(rPos) * ray;
+            rPos += sphereSceneSDF(rPos) * ray;
         } else { // レイが球にぶつかったところで接平面でのライティングを計算
             // 環境光の強さ
             float amb = 0.1;
             // 平行光による拡散光の強さの計算
             // 平行光と法線の内積を取る（法線と同じ角度で入社すると一番強い）
-            float diff = 0.9 * max(dot(normalize(lPos - rPos), gradSDF_8_6(rPos)), 0.0);
+            float diff = 0.9 * max(dot(normalize(lPos - rPos), sphereSceneGradSDF(rPos)), 0.0);
             // 光の色
             half3 col = half3(0.0, 1.0, 1.0);
             // 拡散光と環境光の和によって光の強さが決まる。これに光の色をかけて色が決まる。

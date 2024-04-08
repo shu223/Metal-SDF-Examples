@@ -29,6 +29,9 @@ Shape Animation Examples using SDF. Shaders are written in MSL (Metal Shader Lan
   - 8_7_rotSphere
   - 9_2_morphing
   - 9_3_smoothMin
+  - 9_4_solidTexturing
+
+![](images/9_4_solidTexturing.gif)
 
 - Custom examples
   - Circle SDF

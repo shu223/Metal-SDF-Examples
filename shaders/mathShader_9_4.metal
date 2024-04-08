@@ -10,22 +10,9 @@ using namespace metal;
 
 #include "CommonFunctions.h"
 #include "RotateFunctions.h"
-#include "SDF.h"
+#include "CommonScene.h"
 #include "Textures.h"
 
-
-float sceneSDF_9_4(float3 p) {
-    return sphereSDF(p);
-}
-
-float3 gradSDF_9_4(float3 p) {
-    float eps = 0.001;
-    return normalize(float3(
-                            sceneSDF_9_4(p + float3(eps, 0.0, 0.0)) - sceneSDF_9_4(p - float3(eps, 0.0, 0.0)),
-                            sceneSDF_9_4(p + float3(0.0, eps, 0.0)) - sceneSDF_9_4(p - float3(0.0, eps, 0.0)),
-                            sceneSDF_9_4(p + float3(0.0, 0.0, eps)) - sceneSDF_9_4(p - float3(0.0, 0.0, eps))
-                            ));
-}
 
 [[ stitchable ]] half4 mathGraphicsShader_9_4(float2 position,
                                               half4 color,
@@ -64,15 +51,15 @@ float3 gradSDF_9_4(float3 p) {
 
     // レイを進めるループ
     for(int i = 0; i < 50; i ++ ) {
-        if (sceneSDF_9_4(rPos) > 0.001) { // 球にぶつかる前
+        if (sphereSceneSDF(rPos) > 0.001) { // 球にぶつかる前
             // レイをさらに進める
-            rPos += sceneSDF_9_4(rPos) * ray;
+            rPos += sphereSceneSDF(rPos) * ray;
         } else { // レイが球にぶつかったところで接平面でのライティングを計算
             // 環境光の強さ
             float amb = 0.1;
             // 平行光による拡散光の強さの計算
             // 平行光と法線の内積を取る（法線と同じ角度で入社すると一番強い）
-            float diff = 0.9 * max(dot(normalize(lDir), gradSDF_9_4(rPos)), 0.0);
+            float diff = 0.9 * max(dot(normalize(lDir), sphereSceneGradSDF(rPos)), 0.0);
 
             // 光の色
             // 3次元パーリンノイズをソリッドテクスチャリング
