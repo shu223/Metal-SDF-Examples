@@ -15,6 +15,7 @@ let bookShaders: [ShaderDescribing] = [
     AnimatedShaderInfo(title: "9_2_morphing", functionName: "mathGraphicsShader_9_2"),
     AnimatedShaderInfo(title: "9_3_smoothMin", functionName: "mathGraphicsShader_9_3"),
     AnimatedShaderInfo(title: "9_4_solidTexturing", functionName: "mathGraphicsShader_9_4"),
+    AnimatedShaderInfo(title: "9_10_norm", functionName: "mathGraphicsShader_9_10"),
 ]
 
 let customShaders: [ShaderDescribing] = [

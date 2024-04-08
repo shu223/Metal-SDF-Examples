@@ -16,6 +16,7 @@
 		8A1D09822BA8D1A60019D54E /* ShaderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D09812BA8D1A60019D54E /* ShaderInfo.swift */; };
 		8A1D09842BA8D2C10019D54E /* Shaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D09832BA8D2C10019D54E /* Shaders.swift */; };
 		8A2538132BC4A0F7005718C7 /* CommonScene.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A2538122BC4A0F7005718C7 /* CommonScene.metal */; };
+		8A36483D2BB27A4A00346165 /* mathShader_9_10.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A36483C2BB27A4A00346165 /* mathShader_9_10.metal */; };
 		8A4BBAA62BA8EAD9002C6FB1 /* mathShader_8_2.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAA52BA8EAD9002C6FB1 /* mathShader_8_2.metal */; };
 		8A4BBAA82BA8EF0E002C6FB1 /* mathShader_8_1.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAA72BA8EF0E002C6FB1 /* mathShader_8_1.metal */; };
 		8A4BBAAB2BA8EF6B002C6FB1 /* RotateFunctions.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BBAAA2BA8EF6B002C6FB1 /* RotateFunctions.metal */; };
@@ -45,6 +46,7 @@
 		8A1D09832BA8D2C10019D54E /* Shaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shaders.swift; sourceTree = "<group>"; };
 		8A2538122BC4A0F7005718C7 /* CommonScene.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CommonScene.metal; sourceTree = "<group>"; };
 		8A2538142BC4A13D005718C7 /* CommonScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonScene.h; sourceTree = "<group>"; };
+		8A36483C2BB27A4A00346165 /* mathShader_9_10.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_9_10.metal; sourceTree = "<group>"; };
 		8A4BBAA52BA8EAD9002C6FB1 /* mathShader_8_2.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_8_2.metal; sourceTree = "<group>"; };
 		8A4BBAA72BA8EF0E002C6FB1 /* mathShader_8_1.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_8_1.metal; sourceTree = "<group>"; };
 		8A4BBAA92BA8EF6B002C6FB1 /* RotateFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateFunctions.h; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				8A4BBAC42BA970FF002C6FB1 /* mathShader_9_2.metal */,
 				8ABF4F862BBBB3E6000C2DA0 /* mathShader_9_3.metal */,
 				8A4BBABC2BA9376B002C6FB1 /* mathShader_9_4.metal */,
+				8A36483C2BB27A4A00346165 /* mathShader_9_10.metal */,
 				8A4BBABE2BA93913002C6FB1 /* mophing2D.metal */,
 				8A4BBAC62BA973BA002C6FB1 /* smoothMin2D.metal */,
 				8A4BBAC82BA97689002C6FB1 /* circleShader.metal */,
@@ -236,6 +239,7 @@
 				8A4BBABB2BA933BE002C6FB1 /* mathShader_8_7.metal in Sources */,
 				8A1D09842BA8D2C10019D54E /* Shaders.swift in Sources */,
 				8A4BBAAB2BA8EF6B002C6FB1 /* RotateFunctions.metal in Sources */,
+				8A36483D2BB27A4A00346165 /* mathShader_9_10.metal in Sources */,
 				8A4BBABD2BA9376B002C6FB1 /* mathShader_9_4.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
