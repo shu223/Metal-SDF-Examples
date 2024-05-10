@@ -11,6 +11,7 @@ using namespace metal;
 #include "CommonFunctions.h"
 #include "RotateFunctions.h"
 #include "SDF.h"
+#include "GradSDF.h"
 
 
 float sceneSDF_9_3(float3 p, float time) {
@@ -27,15 +28,6 @@ float sceneSDF_9_3(float3 p, float time) {
     float cup = smin(smallS[1], bigS[1], 0.3);
     float minus = smin(smallS[2], bigS[2], 0.5);
     return min(min(cap, cup), minus);
-}
-
-float3 gradSDF_9_3(float3 p, float time) {
-    float eps = 0.001;
-    return normalize(float3(
-                            sceneSDF_9_3(p + float3(eps, 0.0, 0.0), time) - sceneSDF_9_3(p - float3(eps, 0.0, 0.0), time),
-                            sceneSDF_9_3(p + float3(0.0, eps, 0.0), time) - sceneSDF_9_3(p - float3(0.0, eps, 0.0), time),
-                            sceneSDF_9_3(p + float3(0.0, 0.0, eps), time) - sceneSDF_9_3(p - float3(0.0, 0.0, eps), time)
-                            ));
 }
 
 [[ stitchable ]] half4 mathGraphicsShader_9_3(float2 position,
@@ -79,7 +71,7 @@ float3 gradSDF_9_3(float3 p, float time) {
             float amb = 0.1;
             // 平行光による拡散光の強さの計算
             // 平行光と法線の内積を取る（法線と同じ角度で入社すると一番強い）
-            float diff = 0.9 * max(dot(normalize(lDir), gradSDF_9_3(rPos, time)), 0.0);
+            float diff = 0.9 * max(dot(normalize(lDir), gradSDF(rPos, time, sceneSDF_9_3)), 0.0);
             // 光の色
             half3 col = half3(1.0);
             // 拡散光と環境光の和によって光の強さが決まる。これに光の色をかけて色が決まる。

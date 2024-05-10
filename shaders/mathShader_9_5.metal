@@ -11,21 +11,13 @@ using namespace metal;
 #include "CommonFunctions.h"
 #include "RotateFunctions.h"
 #include "SDF.h"
+#include "GradSDF.h"
 #include "Textures.h"
 
 float sceneSDF_9_5(float3 p){
     // 3次元パーリンノイズを球のSDFにかけている
     // 係数を大きくするとノイズの影響が大きくなる
     return sphereSDF(p)+ 0.1 * pnoise31(10.0 * p);
-}
-
-float3 gradSDF_9_5(float3 p) {
-    float eps = 0.001;
-    return normalize(float3(
-                            sceneSDF_9_5(p + float3(eps, 0.0, 0.0)) - sceneSDF_9_5(p - float3(eps, 0.0, 0.0)),
-                            sceneSDF_9_5(p + float3(0.0, eps, 0.0)) - sceneSDF_9_5(p - float3(0.0, eps, 0.0)),
-                            sceneSDF_9_5(p + float3(0.0, 0.0, eps)) - sceneSDF_9_5(p - float3(0.0, 0.0, eps))
-                            ));
 }
 
 [[ stitchable ]] half4 mathGraphicsShader_9_5(float2 position,
@@ -73,7 +65,7 @@ float3 gradSDF_9_5(float3 p) {
             float amb = 0.1;
             // 平行光による拡散光の強さの計算
             // 平行光と法線の内積を取る（法線と同じ角度で入社すると一番強い）
-            float diff = 0.9 * max(dot(normalize(lDir), gradSDF_9_5(rPos)), 0.0);
+            float diff = 0.9 * max(dot(normalize(lDir), gradSDF(rPos, sceneSDF_9_5)), 0.0);
 
             // 光の色
             half3 col = half3(1.0);

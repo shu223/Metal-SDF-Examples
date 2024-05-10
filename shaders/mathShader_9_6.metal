@@ -11,6 +11,7 @@ using namespace metal;
 #include "CommonFunctions.h"
 #include "RotateFunctions.h"
 #include "SDF.h"
+#include "GradSDF.h"
 #include "Textures.h"
 
 float sceneSDF_9_6(float3 p){
@@ -21,15 +22,6 @@ float sceneSDF_9_6(float3 p){
     return sphereSDF(fract(p+0.5)-0.5, center, scale);
     // また fract(p) ではなく単に p とすると球が1つだけ描画される
     //return sphereSDF(p, center, scale);
-}
-
-float3 gradSDF_9_6(float3 p) {
-    float eps = 0.001;
-    return normalize(float3(
-                            sceneSDF_9_6(p + float3(eps, 0.0, 0.0)) - sceneSDF_9_6(p - float3(eps, 0.0, 0.0)),
-                            sceneSDF_9_6(p + float3(0.0, eps, 0.0)) - sceneSDF_9_6(p - float3(0.0, eps, 0.0)),
-                            sceneSDF_9_6(p + float3(0.0, 0.0, eps)) - sceneSDF_9_6(p - float3(0.0, 0.0, eps))
-                            ));
 }
 
 [[ stitchable ]] half4 mathGraphicsShader_9_6(float2 position,
@@ -76,7 +68,7 @@ float3 gradSDF_9_6(float3 p) {
             float amb = 0.1;
             // 平行光による拡散光の強さの計算
             // 平行光と法線の内積を取る（法線と同じ角度で入社すると一番強い）
-            float diff = 0.9 * max(dot(normalize(lDir), gradSDF_9_6(rPos)), 0.0);
+            float diff = 0.9 * max(dot(normalize(lDir), gradSDF(rPos, sceneSDF_9_6)), 0.0);
 
             // 光の色
             half3 col = half3(0.0, 1.0, 1.0);

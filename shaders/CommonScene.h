@@ -8,6 +8,9 @@
 #ifndef CommonScene_h
 #define CommonScene_h
 
+typedef float (*SceneSDF)(float3);
+typedef float (*SceneSDFWithTime)(float3, float);
+
 float sphereSceneSDF(float3 p);
 float3 sphereSceneGradSDF(float3 p);
 

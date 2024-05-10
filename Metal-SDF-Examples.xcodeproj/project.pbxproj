@@ -34,6 +34,7 @@
 		8AAFAFE42BC64145001E72D4 /* mathShader_9_5.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8AAFAFE32BC64145001E72D4 /* mathShader_9_5.metal */; };
 		8ABF4F872BBBB3E6000C2DA0 /* mathShader_9_3.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8ABF4F862BBBB3E6000C2DA0 /* mathShader_9_3.metal */; };
 		8AE179CC2BE9D9A400B6DDFE /* mathShader_9_6.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8AE179CB2BE9D9A400B6DDFE /* mathShader_9_6.metal */; };
+		8AFBB8F42BEE016A00A104E5 /* GradSDF.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8AFBB8F32BEE016A00A104E5 /* GradSDF.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,8 @@
 		8AAFAFE32BC64145001E72D4 /* mathShader_9_5.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_9_5.metal; sourceTree = "<group>"; };
 		8ABF4F862BBBB3E6000C2DA0 /* mathShader_9_3.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_9_3.metal; sourceTree = "<group>"; };
 		8AE179CB2BE9D9A400B6DDFE /* mathShader_9_6.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_9_6.metal; sourceTree = "<group>"; };
+		8AFBB8F22BEE015000A104E5 /* GradSDF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradSDF.h; sourceTree = "<group>"; };
+		8AFBB8F32BEE016A00A104E5 /* GradSDF.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GradSDF.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				8A4BBAAC2BA8EF9E002C6FB1 /* Textures.metal */,
 				8A4BBAB42BA8F35C002C6FB1 /* SDF.h */,
 				8A4BBAB52BA8F35C002C6FB1 /* SDF.metal */,
+				8AFBB8F22BEE015000A104E5 /* GradSDF.h */,
+				8AFBB8F32BEE016A00A104E5 /* GradSDF.metal */,
 				8A2538142BC4A13D005718C7 /* CommonScene.h */,
 				8A2538122BC4A0F7005718C7 /* CommonScene.metal */,
 				8A4BBAA72BA8EF0E002C6FB1 /* mathShader_8_1.metal */,
@@ -235,6 +240,7 @@
 				8A4BBAC92BA97689002C6FB1 /* circleShader.metal in Sources */,
 				8A1D09532BA83F240019D54E /* ContentView.swift in Sources */,
 				8A1D097E2BA8CED90019D54E /* DetailView.swift in Sources */,
+				8AFBB8F42BEE016A00A104E5 /* GradSDF.metal in Sources */,
 				8A4BBAAD2BA8EF9E002C6FB1 /* Textures.metal in Sources */,
 				8A4BBAA62BA8EAD9002C6FB1 /* mathShader_8_2.metal in Sources */,
 				8A4BBAC52BA970FF002C6FB1 /* mathShader_9_2.metal in Sources */,

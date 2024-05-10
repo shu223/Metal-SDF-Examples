@@ -10,6 +10,7 @@ using namespace metal;
 
 #include "RotateFunctions.h"
 #include "SDF.h"
+#include "GradSDF.h"
 
 float sceneSDF_8_7(float3 p, float time) {
     // y軸を中心に球の中心を回転
@@ -17,17 +18,6 @@ float sceneSDF_8_7(float3 p, float time) {
     // 球の半径
     float scale = 0.3;
     return sphereSDF(p, cent, scale);
-}
-
-// 法線の計算
-// 拡散光の計算に必要
-float3 gradSDF_8_7(float3 p, float time) {
-    float eps = 0.001;
-    return normalize(float3(
-                            sceneSDF_8_7(p + float3(eps, 0.0, 0.0), time) - sceneSDF_8_7(p - float3(eps, 0.0, 0.0), time),
-                            sceneSDF_8_7(p + float3(0.0, eps, 0.0), time) - sceneSDF_8_7(p - float3(0.0, eps, 0.0), time),
-                            sceneSDF_8_7(p + float3(0.0, 0.0, eps), time) - sceneSDF_8_7(p - float3(0.0, 0.0, eps), time)
-                            ));
 }
 
 [[ stitchable ]] half4 mathGraphicsShader_8_7(float2 position,
@@ -74,7 +64,7 @@ float3 gradSDF_8_7(float3 p, float time) {
             // 平行光と法線の内積を取る（法線と同じ角度で入社すると一番強い）
             // ここが8_6と変わっている（コメントアウトしているのが8_6のコード）
             //            float diff = 0.9 * max(dot(normalize(lPos - rPos), gradSDF(rPos)), 0.0);
-            float diff = 0.9 * max(dot(lDir, gradSDF_8_7(rPos, time)), 0.0);
+            float diff = 0.9 * max(dot(lDir, gradSDF(rPos, time, sceneSDF_8_7)), 0.0);
             // 光の色
             half3 col = half3(0.0, 1.0, 1.0);
             // 拡散光と環境光の和によって光の強さが決まる。これに光の色をかけて色が決まる。
