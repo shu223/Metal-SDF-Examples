@@ -34,6 +34,7 @@
 		8AAFAFE42BC64145001E72D4 /* mathShader_9_5.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8AAFAFE32BC64145001E72D4 /* mathShader_9_5.metal */; };
 		8ABF4F872BBBB3E6000C2DA0 /* mathShader_9_3.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8ABF4F862BBBB3E6000C2DA0 /* mathShader_9_3.metal */; };
 		8AE179CC2BE9D9A400B6DDFE /* mathShader_9_6.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8AE179CB2BE9D9A400B6DDFE /* mathShader_9_6.metal */; };
+		8AF4994C2BF3136E001EE586 /* mathShader_9_7.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4994B2BF3136E001EE586 /* mathShader_9_7.metal */; };
 		8AFBB8F42BEE016A00A104E5 /* GradSDF.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8AFBB8F32BEE016A00A104E5 /* GradSDF.metal */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		8AAFAFE32BC64145001E72D4 /* mathShader_9_5.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_9_5.metal; sourceTree = "<group>"; };
 		8ABF4F862BBBB3E6000C2DA0 /* mathShader_9_3.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_9_3.metal; sourceTree = "<group>"; };
 		8AE179CB2BE9D9A400B6DDFE /* mathShader_9_6.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_9_6.metal; sourceTree = "<group>"; };
+		8AF4994B2BF3136E001EE586 /* mathShader_9_7.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = mathShader_9_7.metal; sourceTree = "<group>"; };
 		8AFBB8F22BEE015000A104E5 /* GradSDF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradSDF.h; sourceTree = "<group>"; };
 		8AFBB8F32BEE016A00A104E5 /* GradSDF.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GradSDF.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +152,7 @@
 				8A4BBABC2BA9376B002C6FB1 /* mathShader_9_4.metal */,
 				8AAFAFE32BC64145001E72D4 /* mathShader_9_5.metal */,
 				8AE179CB2BE9D9A400B6DDFE /* mathShader_9_6.metal */,
+				8AF4994B2BF3136E001EE586 /* mathShader_9_7.metal */,
 				8A36483C2BB27A4A00346165 /* mathShader_9_10.metal */,
 				8A4BBABE2BA93913002C6FB1 /* mophing2D.metal */,
 				8A4BBAC62BA973BA002C6FB1 /* smoothMin2D.metal */,
@@ -255,6 +258,7 @@
 				8A4BBAAB2BA8EF6B002C6FB1 /* RotateFunctions.metal in Sources */,
 				8A36483D2BB27A4A00346165 /* mathShader_9_10.metal in Sources */,
 				8A4BBABD2BA9376B002C6FB1 /* mathShader_9_4.metal in Sources */,
+				8AF4994C2BF3136E001EE586 /* mathShader_9_7.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,3 +22,11 @@ float sphereSDF(float3 p, float3 c, float r){
 float sphereSDF(float3 p){
     return sphereSDF(p, float3(0), 1.0);
 }
+
+float planeSDF(float3 p, float3 n, float s){
+    return dot(normalize(n), p) - s;
+}
+
+float octaSDF(float3 p, float s){
+    return planeSDF(abs(p), float3(1.0), s);
+}

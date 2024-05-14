@@ -14,4 +14,8 @@ float circleSDF(float2 p, float2 c, float r);
 float sphereSDF(float3 p, float3 c, float r);
 float sphereSDF(float3 p);
 
+float planeSDF(float3 p, float3 n, float s);
+
+float octaSDF(float3 p, float s);
+
 #endif /* SDFShaders_h */
