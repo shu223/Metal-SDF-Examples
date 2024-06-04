@@ -12,6 +12,18 @@ float contour(float v) {
     return step(abs(v), 0.008);
 }
 
+float kyoto(float3 p) {
+    return (abs(p.x) + abs(p.y) + abs(p.z));
+}
+
+float shogi(float3 p) {
+    return max(max(abs(p.x), abs(p.y)), abs(p.z));
+}
+
+float euc(float3 p) {
+    return length(p);
+}
+
 // 滑らかなmin関数（書籍 p131 コード 9.3）
 // aとbは和を取る対象のSDFの値
 // kは補間を行うしきい値

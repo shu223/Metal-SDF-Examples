@@ -21,6 +21,9 @@ inline Txy mix(Txy x, Txy y, Ta a)
 }
 
 float contour(float v);
+float kyoto(float3 p);
+float shogi(float3 p);
+float euc(float3 p);
 
 float smin(float a, float b, float k);
 

@@ -50,6 +50,10 @@ Shape Animation Examples using SDF. Shaders are written in MSL (Metal Shader Lan
 
 ![](images/9_8.gif)
 
+- 9_9_dist
+
+![](images/9_9.gif)
+
 - 9_10_norm
 
 ![](images/9_10_norm_.gif)
